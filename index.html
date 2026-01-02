@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ar">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -7,103 +7,59 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="nav">
-    <div class="container">
-      <a class="brand" href="#">RenewTech</a>
-      <button id="menuToggle" class="menu-toggle" aria-label="قائمة">☰</button>
-      <nav id="mainNav" class="main-nav">
-        <a href="#home">الرئيسية</a>
-        <a href="#services">خدماتنا</a>
-        <a href="#projects">مشاريع</a>
-        <a href="#contact">تواصل</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">RenewTech Energy</a>
+      <nav class="main-nav" id="mainNav">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
       </nav>
+      <button id="menuToggle" class="menu-toggle" aria-label="Menu">☰</button>
     </div>
   </header>
 
-  <main>
-    <section id="home" class="hero">
-      <div class="container hero-inner">
-        <h1>RenewTech Energy</h1>
-        <p>حلول الطاقة المتجددة الذكية لمستقبل أنظف وأكثر استدامة.</p>
-        <a class="btn" href="#contact">اطلب استشارة مجانية</a>
-      </div>
-    </section>
-
-    <section id="services" class="section">
-      <div class="container">
-        <h2>خدماتنا</h2>
-        <div class="grid">
-          <div class="card">
-            <h3>تصميم أنظمة شمسية</h3>
-            <p>تصميم وحساب أنظمة طاقة شمسية للمنازل والمصانع مع تقارير أداء.</p>
-          </div>
-          <div class="card">
-            <h3>تركيب وصيانة</h3>
-            <p>فِرَق معتمدة للتركيب والصيانة دورية لضمان أعلى كفاءة.</p>
-          </div>
-          <div class="card">
-            <h3>تحليل استهلاك</h3>
-            <p>تحليل استهلاك الطاقة واقتراح حلول لتخفيض التكلفة.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects" class="section alt">
-      <div class="container">
-        <h2>مشاريعنا</h2>
-        <div class="grid">
-          <div class="project">
-            <img src="" alt="مشروع 1 (استبدل بالصورة)" class="project-img">
-            <h4>محطة شمسية منزلية</h4>
-            <p>تركيب محطة بقدرة 5 كيلووات مع نظام بطاريات.</p>
-          </div>
-          <div class="project">
-            <img src="" alt="مشروع 2" class="project-img">
-            <h4>مزرعة طاقة شمسية</h4>
-            <p>مشروع تجاري بقدرة 200 كيلووات مع مراقبة عن بعد.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section">
-      <div class="container">
-        <h2>تواصل معنا</h2>
-        <p>املأ النموذج وسنعاود الاتصال بك خلال 24 ساعة.</p>
-
-        <!-- استبدل action برابط Formspree أو خدمة مشابهة لاحقًا -->
-        <form id="contactForm" action="https://formspree.io/f/yourformid" method="POST">
-          <div class="form-grid">
-            <label>
-              الاسم
-              <input name="name" required placeholder="اسمك">
-            </label>
-            <label>
-              البريد الإلكتروني
-              <input name="email" type="email" required placeholder="name@example.com">
-            </label>
-            <label class="full">
-              الموضوع
-              <input name="subject" placeholder="موضوع الرسالة">
-            </label>
-            <label class="full">
-              الرسالة
-              <textarea name="message" rows="6" required placeholder="اكتب رسالتك هنا"></textarea>
-            </label>
-          </div>
-          <button type="submit" class="btn">أرسل الرسالة</button>
-        </form>
-
-        <p class="note">أو راسلنا على: <a href="mailto:info@renewtech.example">info@renewtech.example</a></p>
-      </div>
-    </section>
+  <main class="hero" id="home">
+    <div class="overlay"></div>
+    <div class="hero-content container">
+      <h1>RenewTech Energy</h1>
+      <p>Smart renewable energy solutions for a cleaner, sustainable future.</p>
+      <a class="btn" href="#contact">Request a Free Consultation</a>
+    </div>
   </main>
 
-  <footer class="footer">
-    <div class="container">
-      <p>© <span id="year"></span> RenewTech Energy — كل الحقوق محفوظة</p>
+  <section id="services" class="section container">
+    <h2>Our Services</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Solar System Design</h3>
+        <p>System sizing, simulation and performance reports.</p>
+      </div>
+      <div class="card">
+        <h3>Installation & Maintenance</h3>
+        <p>Certified teams for installation and periodic maintenance.</p>
+      </div>
+      <div class="card">
+        <h3>Energy Audits</h3>
+        <p>Consumption analysis and optimization recommendations.</p>
+      </div>
     </div>
+  </section>
+
+  <section id="projects" class="section container">
+    <h2>Projects</h2>
+    <p>Example projects demonstrating our work and impact.</p>
+  </section>
+
+  <section id="contact" class="section container">
+    <h2>Contact Us</h2>
+    <p>Email: info@renewtech.example</p>
+    <p>Or use the contact form (when configured).</p>
+  </section>
+
+  <footer class="site-footer container">
+    <p>© <span id="year"></span> RenewTech Energy — All rights reserved</p>
   </footer>
 
   <script src="script.js"></script>
