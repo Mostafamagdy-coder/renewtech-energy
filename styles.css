@@ -1,179 +1,240 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>RenewTech Energy</title>
-  <meta name="description" content="RenewTech Energy provides smart renewable energy solutions including solar, wind, freezing systems, and industrial maintenance.">
-  <link rel="stylesheet" href="styles.css">
-  <!-- Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-</head>
-<body>
-  <!-- Header -->
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="#">
-        <img src="images/logo.png" alt="RenewTech Logo" class="logo">
-      </a>
-      <nav class="main-nav" id="mainNav">
-        <a href="#home">Home</a>
-        <a href="#services">Services</a>
-        <a href="#projects">Projects</a>
-        <a href="#clients">Clients</a>
-        <a href="#testimonials">Testimonials</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <button id="menuToggle" class="menu-toggle" aria-label="Menu" aria-expanded="false">☰</button>
-    </div>
-  </header>
+:root{
+  --accent:#2b8aef;
+  --white:#ffffff;
+  --muted:#dbe7f8;
+  --card-bg:#ffffff;
+  --text-dark:#0f1720;
+}
 
-  <!-- Hero -->
-  <main class="hero" id="home">
-    <div class="overlay"></div>
-    <div class="hero-content container">
-      <h1>RenewTech Energy</h1>
-      <p>Smart renewable energy solutions for a cleaner, sustainable future.</p>
-      <a class="btn" href="#contact">Request a Free Consultation</a>
-    </div>
-  </main>
+/* reset */
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{
+  font-family: "Segoe UI", Roboto, system-ui, Arial, sans-serif;
+  color:var(--text-dark);
+  background:#f6f8fb;
+  line-height:1.5;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  direction:ltr;
+}
 
-  <!-- CTA Bar -->
-  <section class="cta-bar">
-    <p>Ready to go green? <a href="#contact" class="btn">Contact Us Today</a></p>
-  </section>
+/* container */
+.container{max-width:1100px;margin:0 auto;padding:1rem;width:100%}
 
-  <!-- Services -->
-  <section id="services" class="section container">
-    <h2>Our Services</h2>
-    <div class="grid">
-      <div class="card">
-        <h3><i class="fas fa-solar-panel"></i> Solar System Design</h3>
-        <p>System sizing, simulation, and performance reports.</p>
-      </div>
-      <div class="card">
-        <h3><i class="fas fa-tools"></i> Installation & Maintenance</h3>
-        <p>Certified teams for installation and periodic maintenance.</p>
-      </div>
-      <div class="card">
-        <h3><i class="fas fa-chart-line"></i> Energy Audits</h3>
-        <p>Consumption analysis and optimization recommendations.</p>
-      </div>
-      <div class="card">
-        <h3><i class="fas fa-wind"></i> Small-Scale Wind Turbines (up to 50 kW)</h3>
-        <p>Design and installation of wind turbines for homes, farms, and small projects.</p>
-      </div>
-      <div class="card">
-        <h3><i class="fas fa-snowflake"></i> Freezing & Integrated Solutions</h3>
-        <p>Turnkey freezing systems and integrated energy solutions for food and pharmaceutical industries.</p>
-      </div>
-      <div class="card">
-        <h3><i class="fas fa-vials"></i> Test Chamber Maintenance</h3>
-        <p>Maintenance of test refrigerators and climatic chambers for R&D and quality control.</p>
-      </div>
-    </div>
-  </section>
+/* header */
+.site-header{
+  position:sticky;top:0;z-index:20;
+  background:rgba(255,255,255,0.6);
+  backdrop-filter:blur(6px);
+  border-bottom:1px solid rgba(15,23,32,0.04);
+}
+.header-inner{display:flex;align-items:center;justify-content:space-between}
+.brand{font-weight:700;color:var(--accent);text-decoration:none;font-size:1.05rem}
 
-  <!-- Projects -->
-  <section id="projects" class="section container">
-    <h2>Projects</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Factory Solar Integration – 10th of Ramadan</h3>
-        <p>Installed rooftop solar systems for factories, reducing costs and ensuring stable energy supply.</p>
-      </div>
-      <div class="card">
-        <h3>Industrial Energy Solutions – Sadat City</h3>
-        <p>Delivered integrated renewable energy and maintenance services for food and pharmaceutical factories.</p>
-      </div>
-      <div class="card">
-        <h3>Wind Turbines – Zafarana & Wadi Dara</h3>
-        <p>Installed small-scale wind turbines (0.5 kW, 1 kW, 5 kW, 8 kW) for hybrid energy projects.</p>
-      </div>
-    </div>
-  </section>
+/* Logo Styling */
+.logo {
+  height:80px;   /* ضعف الحجم السابق */
+  width:auto;
+  display:block;
+}
+.header-inner .brand {
+  display:flex;
+  align-items:center;
+}
 
-  <!-- Clients -->
-  <section id="clients" class="section container">
-    <h2>Our Clients & Destinations</h2>
-    <div class="clients-grid">
-      <div class="client-card">
-        <p>10th of Ramadan Industrial City</p>
-      </div>
-      <div class="client-card">
-        <p>Sadat City Factories</p>
-      </div>
-      <div class="client-card">
-        <p>Borg El Arab Industrial Zone</p>
-      </div>
-      <div class="client-card">
-        <p>6th of October Factories</p>
-      </div>
-      <div class="client-card">
-        <p>Suez & Port Said Industries</p>
-      </div>
-      <div class="client-card">
-        <p>Zafarana & Wadi Dara Wind Projects</p>
-      </div>
-      <div class="client-card">
-        <p>Faculty of Engineering – Acoustics Lab</p>
-      </div>
-    </div>
-  </section>
+.main-nav{display:flex;gap:1rem}
+.main-nav a{
+  color:var(--text-dark);
+  text-decoration:none;
+  padding:.5rem .6rem;
+  border-radius:6px;
+  transition:background 0.3s ease;
+}
+.main-nav a:hover{background:rgba(43,138,239,0.06)}
+.menu-toggle{display:none;background:transparent;border:0;font-size:1.2rem;padding:.4rem}
 
-  <!-- Testimonials -->
-  <section id="testimonials" class="section container">
-    <h2>What Our Clients Say</h2>
-    <div class="grid">
-      <div class="card">
-        <p>"RenewTech helped us cut energy costs by 30% with their solar solutions."</p>
-        <strong>- Factory Manager, 10th of Ramadan</strong>
-      </div>
-      <div class="card">
-        <p>"The wind turbine installation in Zafarana was seamless and highly efficient."</p>
-        <strong>- Project Owner</strong>
-      </div>
-      <div class="card">
-        <p>"Their maintenance team is reliable and keeps our systems running smoothly."</p>
-        <strong>- Industrial Client, Sadat City</strong>
-      </div>
-    </div>
-  </section>
+/* hero background */
+.hero{
+  position:relative;
+  min-height:70vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background-image:url('images/pg.jpg'); /* صورة الخلفية */
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+}
+.hero .overlay{
+  position:absolute;inset:0;
+  background:linear-gradient(rgba(2,6,23,0.55), rgba(2,6,23,0.45));
+  z-index:1;
+}
+.hero-content{
+  position:relative;z-index:2;
+  text-align:center;padding:2rem;
+  color:var(--white);max-width:1000px;
+}
+.hero-content h1{font-size:2.2rem;margin-bottom:.6rem}
+.hero-content p{color:rgba(255,255,255,0.9);margin-bottom:1rem}
+.btn{
+  display:inline-block;
+  background:var(--accent);
+  color:var(--white);
+  padding:.6rem 1rem;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:600;
+  transition:background 0.3s ease, transform 0.2s ease;
+}
+.btn:hover{
+  background:#1f6fc2;
+  transform:scale(1.05);
+}
 
-  <!-- Contact -->
-  <section id="contact" class="section container">
-    <h2>Contact Us</h2>
-    <p>Email: info@renewtech.com</p>
-    <p>📱 WhatsApp: 
-      <a href="https://wa.me/201019715802" target="_blank" title="Chat with us on WhatsApp">
-        +20 101 971 5802
-      </a>
-    </p>
-    <p>🌐 Facebook: 
-      <a href="https://www.facebook.com/share/1AH3oGzoAr/?mibextid=wwXIfr" target="_blank" title="Visit our Facebook Page">
-        RenewTech Energy Official Page
-      </a>
-    </p>
-  </section>
+/* hero animations */
+.hero-content h1, .hero-content p, .hero-content .btn {
+  animation: fadeUp 1s ease forwards;
+  opacity:0;
+}
+.hero-content h1 { animation-delay:0.2s; }
+.hero-content p { animation-delay:0.4s; }
+.hero-content .btn { animation-delay:0.6s; }
+@keyframes fadeUp {
+  from { transform:translateY(20px); opacity:0; }
+  to { transform:translateY(0); opacity:1; }
+}
 
-  <!-- Footer -->
-  <footer class="site-footer container">
-    <p>© <span id="year"></span> RenewTech Energy — All rights reserved</p>
-    <div class="social-links">
-      <a href="https://wa.me/201019715802" target="_blank" title="WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-      </a>
-      <a href="https://www.facebook.com/share/1AH3oGzoAr/?mibextid=wwXIfr" target="_blank" title="Facebook">
-        <i class="fab fa-facebook"></i>
-      </a>
-    </div>
-  </footer>
+/* sections */
+.section{padding:2.2rem 1rem}
+.section.container{
+  background:var(--card-bg);
+  border-radius:12px;
+  margin:1.2rem auto;
+  color:var(--text-dark);
+  box-shadow:0 8px 30px rgba(2,6,23,0.04);
+}
+.section h2{margin-bottom:.6rem}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.card{
+  padding:1rem;
+  border-radius:10px;
+  background:linear-gradient(180deg,#fff,#fbfdff);
+  box-shadow:0 6px 18px rgba(2,6,23,0.03);
+  transition:transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 12px 25px rgba(2,6,23,0.15);
+}
+.card h3{margin-top:0}
 
-  <!-- Floating WhatsApp Button -->
-  <a href="https://wa.me/201019715802" class="whatsapp-float" target="_blank" title="Chat with us on WhatsApp">
-    <i class="fab fa-whatsapp"></i>
-  </a>
+/* CTA Bar */
+.cta-bar {
+  background:var(--accent);
+  color:#fff;
+  text-align:center;
+  padding:1rem;
+  margin:2rem 0;
+  border-radius:8px;
+}
+.cta-bar a.btn {
+  background:#fff;
+  color:var(--accent);
+  margin-left:0.5rem;
+}
+.cta-bar a.btn:hover {
+  background:#f0f0f0;
+}
 
-  <script src="script.js"></script>
-</body>
-</html>
+/* footer */
+.site-footer{
+  padding:1.2rem 1rem;
+  text-align:center;
+  color:#444;
+  background:#eef3f9;
+  border-top:1px solid rgba(15,23,32,0.08);
+}
+.social-links {
+  margin-top:0.8rem;
+  display:flex;
+  justify-content:center;
+  gap:1rem;
+}
+.social-links a {
+  font-size:1.4rem;
+  color:var(--accent);
+  transition:color 0.3s ease;
+}
+.social-links a:hover {
+  color:#1f6fc2;
+}
+
+/* WhatsApp Floating Button */
+.whatsapp-float {
+  position:fixed;
+  width:50px;
+  height:50px;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  color:#fff;
+  border-radius:50%;
+  text-align:center;
+  font-size:24px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.2);
+  z-index:100;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  transition:transform 0.3s ease;
+}
+.whatsapp-float:hover {
+  transform:scale(1.1);
+  background:#20b858;
+}
+
+/* Clients Section */
+.clients-grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:1.5rem;
+  margin-top:1rem;
+}
+.client-card {
+  background:#fff;
+  border-radius:10px;
+  box-shadow:0 6px 18px rgba(2,6,23,0.05);
+  text-align:center;
+  padding:1rem;
+  transition:transform 0.3s ease, box-shadow 0.3s ease;
+}
+.client-card:hover {
+  transform:translateY(-6px);
+  box-shadow:0 12px 25px rgba(2,6,23,0.15);
+}
+.client-card img {
+  max-width:100px;
+  margin-bottom:.6rem;
+  filter:grayscale(100%);
+  transition:filter 0.3s ease;
+}
+.client-card:hover img {
+  filter:grayscale(0%);
+}
+.client-card p {
+  font-weight:600;
+  color:var(--text-dark);
+}
+
+/* responsive */
+@media (max-width:1000px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:700px){
+  .grid{grid-template-columns:1fr}
+  .main-nav{display:none}
+  .menu-toggle{display:block}
+  .hero-content h1{font-size:1.6rem}
+  .hero{background-attachment:scroll}
+}
