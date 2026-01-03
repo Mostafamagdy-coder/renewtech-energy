@@ -61,11 +61,7 @@ body{
   display:flex;
   align-items:center;
   justify-content:center;
-  background-image:url('images/bg.jpg'); /* صورة الخلفية */
-  background-size:cover;
-  background-position:center;
-  background-repeat:no-repeat;
-  background-attachment:fixed;
+  background:#2b8aef; /* لون ثابت بدل الصورة */
 }
 .hero .overlay{
   position:absolute;inset:0;
@@ -215,15 +211,7 @@ body{
   transform:translateY(-6px);
   box-shadow:0 12px 25px rgba(2,6,23,0.15);
 }
-.client-card img {
-  max-width:100px;
-  margin-bottom:.6rem;
-  filter:grayscale(100%);
-  transition:filter 0.3s ease;
-}
-.client-card:hover img {
-  filter:grayscale(0%);
-}
+/* حذف الصور والاكتفاء بالنص */
 .client-card p {
   font-weight:600;
   color:var(--text-dark);
