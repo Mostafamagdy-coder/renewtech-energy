@@ -4,9 +4,13 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>RenewTech Energy</title>
+  <meta name="description" content="RenewTech Energy provides smart renewable energy solutions including solar, wind, freezing systems, and industrial maintenance.">
   <link rel="stylesheet" href="styles.css">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
+  <!-- Header -->
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="#">RenewTech Energy</a>
@@ -14,12 +18,14 @@
         <a href="#home">Home</a>
         <a href="#services">Services</a>
         <a href="#projects">Projects</a>
+        <a href="#testimonials">Testimonials</a>
         <a href="#contact">Contact</a>
       </nav>
-      <button id="menuToggle" class="menu-toggle" aria-label="Menu">☰</button>
+      <button id="menuToggle" class="menu-toggle" aria-label="Menu" aria-expanded="false">☰</button>
     </div>
   </header>
 
+  <!-- Hero -->
   <main class="hero" id="home">
     <div class="overlay"></div>
     <div class="hero-content container">
@@ -29,97 +35,129 @@
     </div>
   </main>
 
+  <!-- CTA Bar -->
+  <section class="cta-bar">
+    <p>Ready to go green? <a href="#contact" class="btn">Contact Us Today</a></p>
+  </section>
+
+  <!-- Services -->
   <section id="services" class="section container">
-  <h2>Our Services</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>Solar System Design</h3>
-      <p>System sizing, simulation, and performance reports.</p>
+    <h2>Our Services</h2>
+    <div class="grid">
+      <div class="card">
+        <h3><i class="fas fa-solar-panel"></i> Solar System Design</h3>
+        <p>System sizing, simulation, and performance reports.</p>
+      </div>
+      <div class="card">
+        <h3><i class="fas fa-tools"></i> Installation & Maintenance</h3>
+        <p>Certified teams for installation and periodic maintenance.</p>
+      </div>
+      <div class="card">
+        <h3><i class="fas fa-chart-line"></i> Energy Audits</h3>
+        <p>Consumption analysis and optimization recommendations.</p>
+      </div>
+      <div class="card">
+        <h3><i class="fas fa-wind"></i> Small-Scale Wind Turbines (up to 50 kW)</h3>
+        <p>Design and installation of wind turbines for homes, farms, and small projects.</p>
+      </div>
+      <div class="card">
+        <h3><i class="fas fa-snowflake"></i> Freezing & Integrated Solutions</h3>
+        <p>Turnkey freezing systems and integrated energy solutions for food and pharmaceutical industries.</p>
+      </div>
+      <div class="card">
+        <h3><i class="fas fa-vials"></i> Test Chamber Maintenance</h3>
+        <p>Maintenance of test refrigerators and climatic chambers for R&D and quality control.</p>
+      </div>
     </div>
-    <div class="card">
-      <h3>Installation & Maintenance</h3>
-      <p>Certified teams for installation and periodic maintenance.</p>
-    </div>
-    <div class="card">
-      <h3>Energy Audits</h3>
-      <p>Consumption analysis and optimization recommendations.</p>
-    </div>
-    <!-- New service -->
-    <div class="card">
-      <h3>Small-Scale Wind Turbines (up to 50 kW)</h3>
-      <p>Design and installation of wind turbines for homes, farms, and small projects, with performance reports and efficiency guarantees.</p>
-    </div>
-  </div>
-</section>
+  </section>
+
+  <!-- Projects -->
   <section id="projects" class="section container">
-  <h2>Projects</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>Factory Solar Integration – 10th of Ramadan</h3>
-      <p>Installed rooftop solar systems for factories, reducing costs and ensuring stable energy supply.</p>
+    <h2>Projects</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Factory Solar Integration – 10th of Ramadan</h3>
+        <p>Installed rooftop solar systems for factories, reducing costs and ensuring stable energy supply.</p>
+      </div>
+      <div class="card">
+        <h3>Industrial Energy Solutions – Sadat City</h3>
+        <p>Delivered integrated renewable energy and maintenance services for food and pharmaceutical factories.</p>
+      </div>
+      <div class="card">
+        <h3>Wind Turbines – Zafarana & Wadi Dara</h3>
+        <p>Installed small-scale wind turbines (0.5 kW, 1 kW, 5 kW, 8 kW) for hybrid energy projects.</p>
+      </div>
+      <div class="card">
+        <h3>Thermotron Climatic Chamber – Acoustics Building</h3>
+        <p>Maintenance and calibration of environmental test chamber at Faculty of Engineering.</p>
+      </div>
+      <div class="card">
+        <h3>Industrial Projects – Borg El Arab</h3>
+        <p>Implemented solar and energy efficiency solutions for chemical and plastic factories.</p>
+      </div>
+      <div class="card">
+        <h3>Industrial Projects – 6th of October</h3>
+        <p>Energy audits and renewable integration for engineering and electronics factories.</p>
+      </div>
+      <div class="card">
+        <h3>Industrial Projects – Suez & Port Said</h3>
+        <p>Renewable energy and maintenance services for port-related industries and energy facilities.</p>
+      </div>
     </div>
-    <div class="card">
-      <h3>Industrial Energy Solutions – Sadat City</h3>
-      <p>Delivered integrated renewable energy and maintenance services for food and pharmaceutical factories.</p>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="section container">
+    <h2>What Our Clients Say</h2>
+    <div class="grid">
+      <div class="card">
+        <p>"RenewTech helped us cut energy costs by 30% with their solar solutions."</p>
+        <strong>- Factory Manager, 10th of Ramadan</strong>
+      </div>
+      <div class="card">
+        <p>"The wind turbine installation in Zafarana was seamless and highly efficient."</p>
+        <strong>- Project Owner</strong>
+      </div>
+      <div class="card">
+        <p>"Their maintenance team is reliable and keeps our systems running smoothly."</p>
+        <strong>- Industrial Client, Sadat City</strong>
+      </div>
     </div>
-    <div class="card">
-      <h3>Wind Turbines – Zafarana & Wadi Dara</h3>
-      <p>Installed small-scale wind turbines (0.5 kW, 1 kW, 5 kW, 8 kW) for hybrid energy projects.</p>
-    </div>
-    <div class="card">
-      <h3>Industrial Maintenance – Nationwide</h3>
-      <p>Comprehensive maintenance contracts covering electrical, mechanical, refrigeration, and renewable systems across Egypt.</p>
-    </div>
-    <div class="card">
-      <h3>Freezing & Integrated Solutions</h3>
-      <p>Turnkey freezing systems and integrated energy solutions for food and pharmaceutical industries.</p>
-    </div>
-    <div class="card">
-      <h3>Test Chamber Maintenance</h3>
-      <p>Maintenance of test refrigerators and climatic chambers for R&D and quality control.</p>
-    </div>
-    <div class="card">
-      <h3>Thermotron Climatic Chamber – Acoustics Building</h3>
-      <p>Maintenance and calibration of environmental test chamber at Faculty of Engineering, ensuring precise acoustic experiments.</p>
-    </div>
-    <div class="card">
-      <h3>Industrial Projects – Borg El Arab</h3>
-      <p>Implemented solar and energy efficiency solutions for chemical and plastic factories.</p>
-    </div>
-    <div class="card">
-      <h3>Industrial Projects – 6th of October</h3>
-      <p>Energy audits and renewable integration for engineering and electronics factories.</p>
-    </div>
-    <div class="card">
-      <h3>Industrial Projects – Suez & Port Said</h3>
-      <p>Renewable energy and maintenance services for port-related industries and energy facilities.</p>
-    </div>
-  </div>
-</section>
+  </section>
+
+  <!-- Contact -->
   <section id="contact" class="section container">
-  <h2>Contact Us</h2>
-  <p>Email: info@renewtech.com</p>
-  <p>Or use the contact form (when configured).</p>
+    <h2>Contact Us</h2>
+    <p>Email: info@renewtech.com</p>
+    <p>📱 WhatsApp: 
+      <a href="https://wa.me/201019715802" target="_blank" title="Chat with us on WhatsApp">
+        +20 101 971 5802
+      </a>
+    </p>
+    <p>🌐 Facebook: 
+      <a href="https://www.facebook.com/share/1AH3oGzoAr/?mibextid=wwXIfr" target="_blank" title="Visit our Facebook Page">
+        RenewTech Energy Official Page
+      </a>
+    </p>
+  </section>
 
-  <!-- WhatsApp Contact -->
-  <p>
-    📱 WhatsApp: 
-    <a href="https://wa.me/201019715802" target="_blank" title="Chat with us on WhatsApp">
-      +20 101 971 5802
-    </a>
-  </p>
-
-  <!-- Facebook Page -->
-  <p>
-    🌐 Facebook: 
-    <a href="https://www.facebook.com/share/1AH3oGzoAr/?mibextid=wwXIfr" target="_blank" title="Visit our Facebook Page">
-      RenewTech Energy Official Page
-    </a>
-  </p>
-</section>
+  <!-- Footer -->
   <footer class="site-footer container">
     <p>© <span id="year"></span> RenewTech Energy — All rights reserved</p>
+    <div class="social-links">
+      <a href="https://wa.me/201019715802" target="_blank" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <a href="https://www.facebook.com/share/1AH3oGzoAr/?mibextid=wwXIfr" target="_blank" title="Facebook">
+        <i class="fab fa-facebook"></i>
+      </a>
+    </div>
   </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/201019715802" class="whatsapp-float" target="_blank" title="Chat with us on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
 
   <script src="script.js"></script>
 </body>
