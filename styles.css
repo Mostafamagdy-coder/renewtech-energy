@@ -34,7 +34,7 @@ body{
 
 /* Logo Styling */
 .logo {
-  height:40px;   /* حجم اللوجو */
+  height:80px;   /* ضعف الحجم السابق */
   width:auto;
   display:block;
 }
@@ -61,7 +61,11 @@ body{
   display:flex;
   align-items:center;
   justify-content:center;
-  background:#2b8aef; /* لون ثابت بدل الصورة */
+  background-image:url('images/pg.jpg'); /* صورة الخلفية */
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
 }
 .hero .overlay{
   position:absolute;inset:0;
@@ -211,7 +215,15 @@ body{
   transform:translateY(-6px);
   box-shadow:0 12px 25px rgba(2,6,23,0.15);
 }
-/* حذف الصور والاكتفاء بالنص */
+.client-card img {
+  max-width:100px;
+  margin-bottom:.6rem;
+  filter:grayscale(100%);
+  transition:filter 0.3s ease;
+}
+.client-card:hover img {
+  filter:grayscale(0%);
+}
 .client-card p {
   font-weight:600;
   color:var(--text-dark);
