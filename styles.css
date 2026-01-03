@@ -61,7 +61,7 @@ body{
   display:flex;
   align-items:center;
   justify-content:center;
-  background-image:url('images/hero-bg.jpg'); /* صورة الخلفية */
+  background-image:url('images/bg.jpg'); /* صورة الخلفية */
   background-size:cover;
   background-position:center;
   background-repeat:no-repeat;
