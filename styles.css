@@ -31,6 +31,18 @@ body{
 }
 .header-inner{display:flex;align-items:center;justify-content:space-between}
 .brand{font-weight:700;color:var(--accent);text-decoration:none;font-size:1.05rem}
+
+/* Logo Styling */
+.logo {
+  height:40px;   /* حجم اللوجو */
+  width:auto;
+  display:block;
+}
+.header-inner .brand {
+  display:flex;
+  align-items:center;
+}
+
 .main-nav{display:flex;gap:1rem}
 .main-nav a{
   color:var(--text-dark);
@@ -49,7 +61,7 @@ body{
   display:flex;
   align-items:center;
   justify-content:center;
-  background-image:url('images/bg.jpg'); /* ensure image uploaded */
+  background-image:url('images/hero-bg.jpg'); /* صورة الخلفية */
   background-size:cover;
   background-position:center;
   background-repeat:no-repeat;
@@ -184,16 +196,7 @@ body{
   background:#20b858;
 }
 
-/* responsive */
-@media (max-width:1000px){.grid{grid-template-columns:repeat(2,1fr)}}
-@media (max-width:700px){
-  .grid{grid-template-columns:1fr}
-  .main-nav{display:none}
-  .menu-toggle{display:block}
-  .hero-content h1{font-size:1.6rem}
-  .hero{background-attachment:scroll}
-}
-/* --- Clients & Destinations Section --- */
+/* Clients Section */
 .clients-grid {
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
@@ -224,4 +227,14 @@ body{
 .client-card p {
   font-weight:600;
   color:var(--text-dark);
+}
+
+/* responsive */
+@media (max-width:1000px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:700px){
+  .grid{grid-template-columns:1fr}
+  .main-nav{display:none}
+  .menu-toggle{display:block}
+  .hero-content h1{font-size:1.6rem}
+  .hero{background-attachment:scroll}
 }
